@@ -1,3 +1,20 @@
 <html>
-  allah teby ne lubit
+
+<head>
+  <meta charset="UTF-8">
+  <Title>OOO</Title>
+  <script scr="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+  <button onclick="hello()">Нажми на меня</button>
+  <script>
+    const tg = window.Telegram.WebApp;
+    const user = tg.initDataUnsafe.user;
+    function hello() {
+      alert("Твое имя: " + user.first_name);
+    }
+  </script>
+</body>
+
 </html>
